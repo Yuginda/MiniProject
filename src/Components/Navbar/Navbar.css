@@ -28,11 +28,12 @@
   color: white;
   cursor: pointer; /*did this to change cursor from pointer to hand to make it feel interactive*/
   font-size: 18px;
-  transition: color 0.3s ease;
+  transition: 0.5s;
 }
 
 .navbar .menu li:hover {
     color: rgb(213, 77, 163);
+    transform: scale(1.05);
 }
 
 .navbar .connect {
