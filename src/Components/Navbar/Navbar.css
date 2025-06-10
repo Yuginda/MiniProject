@@ -16,3 +16,39 @@
   width: auto;
 }
 
+.navbar .menu {
+  display: flex;
+  gap: 42px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .menu li {
+  color: white;
+  cursor: pointer; /*did this to change cursor from pointer to hand to make it feel interactive*/
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu li:hover {
+    color: rgb(213, 77, 163);
+}
+
+.navbar .connect {
+  padding: 10px 20px;
+  border-radius: 50px; /*did this for pill shape*/
+  border: 1px solid mediumvioletred;
+  color: white;
+  background: linear-gradient(135deg, mediumvioletred, #8a2be2); /*pink to purple*/
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer; 
+  transition: 0.5s;
+}
+
+.navbar .connect:hover {
+  background: linear-gradient(135deg, #8a2be2, mediumvioletred); /* reverses gradient to make it more visual */
+  transform: scale(1.05); /* slight grow effect */
+  box-shadow: 0 0 10px mediumvioletred;
+}
