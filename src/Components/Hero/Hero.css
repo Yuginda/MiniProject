@@ -1,0 +1,48 @@
+
+.hero{
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    gap: 30px;
+}
+
+.hero img{
+    margin-top: 50px;
+    height: 500px;
+    margin-right: 50px;
+}
+
+.hero h1{
+    align-content: center;
+}
+
+.hero p{
+    align-content: center;
+}
+
+.hero .action{
+    display: flex;
+    gap: 50px;
+}
+
+.hero .action .connect{
+    padding:25px 75px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, mediumvioletred, #8a2be2);
+    cursor:pointer;
+}
+
+.hero .action .resume{
+    padding:25px 75px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    cursor:pointer;
+}
+
+.hero .action .connect:hover{
+    border: 2px solid #fff;
+}
+
+.hero .action .resume:hover{
+    border: 2px solid mediumvioletred;
+}
