@@ -32,8 +32,8 @@
 }
 
 .navbar .menu li:hover {
-    color: rgb(213, 77, 163);
-    transform: scale(1.05);
+  color: mediumvioletred;
+  transform: scale(1.05);
 }
 
 .navbar .connect {
@@ -41,7 +41,7 @@
   border-radius: 50px; /*did this for pill shape*/
   border: 1px solid mediumvioletred;
   color: white;
-  background: linear-gradient(135deg, mediumvioletred, #8a2be2); /*pink to purple*/
+  background: linear-gradient(264deg, #DA4453 -5.09%, #89216B 100%);
   font-size: 18px;
   font-weight: 500;
   cursor: pointer; 
@@ -49,7 +49,7 @@
 }
 
 .navbar .connect:hover {
-  background: linear-gradient(135deg, #8a2be2, mediumvioletred); /* reverses gradient to make it more visual */
+  background: linear-gradient(264deg,#89216B -5.09% , #DA4453 100%);
   transform: scale(1.05); /* slight grow effect */
   box-shadow: 0 0 10px mediumvioletred;
 }
