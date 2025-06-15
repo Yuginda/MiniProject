@@ -1,0 +1,118 @@
+.about {
+    padding: 100px 50px;
+    background-color: #0f0f0f;
+    position: relative;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(218, 68, 83, 0.03) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 60px;
+    background: linear-gradient(264deg, #DA4453 -5.09%, #89216B 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 15px rgba(218, 68, 83, 0.3));
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #f0f0f0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.about-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.stat {
+    background: rgba(240, 240, 240, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid rgba(218, 68, 83, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(218, 68, 83, 0.1);
+}
+
+.stat:hover {
+    border: 2px solid mediumvioletred;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(218, 68, 83, 0.3);
+    background: rgba(240, 240, 240, 0.08);
+}
+
+.stat h3 {
+    font-size: 36px;
+    background: linear-gradient(264deg, #DA4453 -5.09%, #89216B 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 10px rgba(218, 68, 83, 0.4));
+}
+
+.stat p {
+    font-size: 16px;
+    color: #e0e0e0;
+    margin: 0;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {  /* did this to help when minimizing the screen to smaller size*/
+    .about {
+        padding: 60px 20px;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .about h2 {
+        font-size: 36px;
+    }
+    
+    .about-stats {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .stat {
+        padding: 20px;
+        flex: 1;
+        margin: 0 10px;
+    }
+} 
