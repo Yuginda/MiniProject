@@ -33,6 +33,7 @@
     width: 70%;
     font-weight: 600;
     font-size: 90px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 .hero h1 span{
@@ -40,6 +41,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 10px rgba(218, 68, 83, 0.3));
 }
 
 .hero p{ 
@@ -47,6 +49,7 @@
     width: 50%;
     font-size: 24px;
     line-height: 40px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
 }
 
 .hero .action{
@@ -75,8 +78,10 @@
 .hero .action .connect:hover{
     background: linear-gradient(264deg, #DA4453 -5.09%, #89216B 100%);
     border: 2px solid #fff;
+    box-shadow: 0 0 30px rgba(218, 68, 83, 0.4);
 }
 
 .hero .action .resume:hover{
     border: 2px solid mediumvioletred;
+    box-shadow: 0 0 20px rgba(186, 85, 211, 0.3);
 }
