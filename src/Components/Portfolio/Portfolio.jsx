@@ -3,10 +3,10 @@ import './Portfolio.css'
 function Portfolio() {
     const featuredProject = {
         title: "Yuginda's Portfolio Website",
-        description: "This webpage is a website that provides the contact, portfolio and details about me and it's is built using React Js.",
+        description: "This webpage is a website that provides the contact, portfolio and details about me and it is built using React Js.",
         technologies: ["React Js", "VS code"],
-        github: "",
-        demo: "",
+        github: "https://github.com/Yuginda/MiniProject",
+        demo: "https://github.com/Yuginda/MiniProject",
         image: "💼"
     }
 
@@ -30,11 +30,21 @@ function Portfolio() {
                             <div className='project-title-section'>
                                 <h3>{featuredProject.title}</h3>
                                 <div className='project-links'>
-                                    <a href={featuredProject.github} className='project-link'>
+                                    <a 
+                                        href={featuredProject.github} 
+                                        className='project-link'
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
                                         <span className='link-icon'>💻</span>
                                         GitHub
                                     </a>
-                                    <a href={featuredProject.demo} className='project-link demo'>
+                                    <a 
+                                        href={featuredProject.demo} 
+                                        className='project-link demo'
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
                                         <span className='link-icon'>🚀</span>
                                         Live Demo
                                     </a>
@@ -66,7 +76,7 @@ function Portfolio() {
                             ))}
                         </div>
                         <div className='skills-footer'>
-                            <p>Always learning and exploring new technologies</p>
+                            <p>Would love to learn and explore new technologies</p>
                         </div>
                     </div>
                 </div>
@@ -75,4 +85,4 @@ function Portfolio() {
     )
 }
 
-export default Portfolio 
+export default Portfolio
