@@ -1,18 +1,21 @@
 .portfolio {
     padding: 100px 50px;
-    background-color: #0f0f0f;
+    background-color: #000000;
     position: relative;
 }
 
+
 .portfolio::before {
-    content: '';
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(218, 68, 83, 0.03) 0%, transparent 70%);
-    pointer-events: none;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(218, 68, 83, 0.03) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 
@@ -163,11 +166,11 @@
 }
 
 .link-icon {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .project-description {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.7;
     color: #e8e8e8;
     margin-bottom: 30px;
@@ -290,7 +293,7 @@
 }
 
 .skill-text {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
     color: #f0f0f0;
     text-align: center;
@@ -305,7 +308,7 @@
 }
 
 .skills-footer p {
-    font-size: 13px;
+    font-size: 15px;
     color: #ff8fa3;
     font-style: italic;
     margin: 0;
