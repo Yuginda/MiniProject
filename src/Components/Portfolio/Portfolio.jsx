@@ -3,10 +3,10 @@ import './Portfolio.css'
 function Portfolio() {
     const featuredProject = {
         title: "Yuginda's Portfolio Website",
-        description: "This webpage is a website that provides the contact, portfolio and details about me and it's is built using React Js.",
+        description: "This webpage is a website that provides the contact, portfolio and details about me and it is built using React Js.",
         technologies: ["React Js", "VS code"],
-        github: "",
-        demo: "",
+        github: "https://github.com/Yuginda/MiniProject",
+        demo: "https://github.com/Yuginda/MiniProject",
         image: "💼"
     }
 
@@ -66,7 +66,7 @@ function Portfolio() {
                             ))}
                         </div>
                         <div className='skills-footer'>
-                            <p>Always learning and exploring new technologies</p>
+                            <p>Would love to learn and explore new technologies</p>
                         </div>
                     </div>
                 </div>
