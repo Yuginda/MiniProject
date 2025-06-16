@@ -30,11 +30,21 @@ function Portfolio() {
                             <div className='project-title-section'>
                                 <h3>{featuredProject.title}</h3>
                                 <div className='project-links'>
-                                    <a href={featuredProject.github} className='project-link'>
+                                    <a 
+                                        href={featuredProject.github} 
+                                        className='project-link'
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
                                         <span className='link-icon'>💻</span>
                                         GitHub
                                     </a>
-                                    <a href={featuredProject.demo} className='project-link demo'>
+                                    <a 
+                                        href={featuredProject.demo} 
+                                        className='project-link demo'
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
                                         <span className='link-icon'>🚀</span>
                                         Live Demo
                                     </a>
@@ -75,4 +85,4 @@ function Portfolio() {
     )
 }
 
-export default Portfolio 
+export default Portfolio
