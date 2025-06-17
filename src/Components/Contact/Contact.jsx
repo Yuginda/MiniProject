@@ -1,6 +1,11 @@
 import './Contact.css'
 import { useState } from 'react'
 
+import githubIcon from '../../assets/icons8-github-64.png'
+import gmailIcon from '../../assets/icons8-gmail-48.png'
+import linkedinIcon from '../../assets/icons8-linked-in-64.png'
+import xIcon from '../../assets/icons8-x-64.png'
+
 function Contact() {
     const [formData, setFormData] = useState({
         name: '',
@@ -31,22 +36,22 @@ function Contact() {
         {
             name: 'GitHub',
             url: 'https://github.com/yuginda',
-            icon: '💻'
+            icon: githubIcon
         },
         {
             name: 'LinkedIn',
             url: 'https://www.linkedin.com/in/yuginda-ranawaka-978786328/',
-            icon: '💼'
+            icon: linkedinIcon
         },
         {
             name: 'Email',
             url: 'mailto:yugindaranawaka@gmail.com',
-            icon: '📧'
+            icon: gmailIcon
         },
         {
             name: 'X',
-            url: 'https://twitter.com/',
-            icon: '🐦'
+            url: 'https://twitter.com/yuginda',
+            icon: xIcon
         }
     ]
 
@@ -55,9 +60,10 @@ function Contact() {
             <div className='contact-container'>
                 <h2>Get In Touch</h2>
                 <p className='contact-intro'>
-                    I'm currently seeking opportunities to apply and grow my skills in a real-world setting. If you think I might be a good fit for your team or project, I'd be grateful to connect.
+                    I'm currently seeking opportunities to apply and grow my skills in a real-world setting. 
+                    If you think I might be a good fit for your team or project, I’d be grateful to connect.
                 </p>
-                
+
                 <div className='contact-content'>
                     <div className='contact-form-section'>
                         <h3>Send me a message</h3>
@@ -119,12 +125,16 @@ function Contact() {
                                     target='_blank'
                                     rel='noopener noreferrer'
                                 >
-                                    <span className='social-icon'>{social.icon}</span>
+                                    <img
+                                        src={social.icon}
+                                        alt={`${social.name} icon`}
+                                        className='social-icon-img'
+                                    />
                                     <span className='social-name'>{social.name}</span>
                                 </a>
                             ))}
                         </div>
-                        
+
                         <div className='contact-details'>
                             <div className='contact-item'>
                                 <span className='contact-icon'>📍</span>
