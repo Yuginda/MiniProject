@@ -50,7 +50,7 @@ function Contact() {
         },
         {
             name: 'X',
-            url: 'https://twitter.com/yuginda',
+            url: 'https://x.com/y9741574845159?s=11',
             icon: xIcon
         }
     ]
