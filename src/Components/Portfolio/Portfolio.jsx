@@ -6,7 +6,7 @@ function Portfolio() {
         description: "This webpage is a website that provides the contact, portfolio and details about me and it is built using React Js.",
         technologies: ["React Js", "VS code"],
         github: "https://github.com/Yuginda/MiniProject",
-        demo: "https://github.com/Yuginda/MiniProject",
+        demo: "https://yuginda.github.io/MiniProject/",
         image: "💼"
     }
 
@@ -33,7 +33,7 @@ function Portfolio() {
                                     <a 
                                         href={featuredProject.github} 
                                         className='project-link'
-                                        target="_blank"
+                                        target="_blank" /* To open in new tab or keeps openeing in same tab */
                                         rel="noopener noreferrer"
                                     >
                                         <span className='link-icon'>💻</span>

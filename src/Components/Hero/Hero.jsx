@@ -10,7 +10,7 @@ function Hero(){
     };
 
     const openResume = () => {
-        window.open('/Yugindacv.pdf', '_blank', 'noopener,noreferrer')
+        window.open('/MiniProject/Yugindacv.pdf', '_blank', 'noopener,noreferrer')
     }
 
     return(
